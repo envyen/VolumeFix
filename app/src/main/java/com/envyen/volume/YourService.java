@@ -143,17 +143,4 @@ public class YourService extends Service {
             }
         }
     }
-
-    private class MediaButtonReceiver implements BroadcastReceiver {
-        void onReceive(Intent intent) {
-            KeyEvent ke = (KeyEvent)intent.getExtra(Intent.EXTRA_KEY_EVENT);
-            if (ke .getKeyCode() == KeyEvent.KEYCODE_VOLUME_DOWN) {
-                //action when volume goes down
-            }
-            if (ke .getKeyCode() == KeyEvent.KEYCODE_VOLUME_UP) {
-                //action when volume goes up
-            }
-        }
-    }
-
 }
